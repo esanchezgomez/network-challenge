@@ -1,20 +1,22 @@
-# Create an AWS Key Pair. Amazon EC2 stores the public key on the instance and I store the private key
-# The private key allows me to obtain the admin password to login to the EC2 instance via RDP
+# Create the EC2 instance
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
 
-resource "tls_private_key" "ppro_private_key" {
-    algorithm = "RSA"
-    rsa_bits  = 4096
+resource "aws_instance" "ppro_web_server" {
+    ami                         = "ami-0a20b6d46b59a5cd5"
+    instance_type               = "t2.micro"
+    subnet_id                   = aws_subnet.ppro_public_subnet_1.id
+    vpc_security_group_ids      = aws_security_group.allow_tls_rdp_in.id
+    associate_public_ip_address = true
+    key_name                    = aws_key_pair.ppro_key_pair.id
+    user_data                   = data.template_file.install-iis.rendered
+    #user_data                  = "${file("install_apache.sh")}"
 }
 
-resource "local_file" "ppro_private_key_file" {
-    filename          = "ppro_key.pem"
-    sensitive_content = tls_private_key.ppro_private_key.private_key_pem
-    file_permission   = "0400"
-}
-
-# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair
-
-resource "aws_key_pair" "ppro_key_pair" {
-    key_name   = "ppro-key-pair"
-    public_key = tls_private_key.ppro_private_key.public_key_openssh
+data "template_file" "install-iis" {
+    template = <<EOF
+    <powershell>
+    Install-WindowsFeature -Name Web-Server -IncludeManagementTools;
+    Set-Service -Name W3SVC -StartupType Automatic;
+    </powershell>
+    EOF
 }
