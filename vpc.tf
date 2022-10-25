@@ -13,13 +13,13 @@ resource "aws_vpc" "ppro_vpc" {
 # Create public subnet within the VPC
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet
 
-resource "aws_subnet" "ppro_public_subnet_1" {
+resource "aws_subnet" "ppro_public_subnet" {
     vpc_id                  = aws_vpc.ppro_vpc.id
     cidr_block              = "10.10.10.0/26"
     availability_zone       = "eu-west-3a"
     map_public_ip_on_launch = true
     tags                    = {
-        Name = "PPRO-Public-Subnet-1"
+        Name = "PPRO-Public-Subnet"
     }
 }
 
@@ -36,7 +36,7 @@ resource "aws_internet_gateway" "ppro_igw" {
 # Create a custom route table (CRT) so that the public subnet can reach the internet
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table
 
-resource "aws_route_table" "ppro_crt" {
+resource "aws_route_table" "ppro_crt_internet" {
     vpc_id = aws_vpc.ppro_vpc.id
     
     route {
@@ -45,16 +45,16 @@ resource "aws_route_table" "ppro_crt" {
     }
 
     tags = {
-        Name = "PPRO-CRT"
+        Name = "PPRO-CRT-Internet"
     }
 }
 
 # Associate the custom route table (CRT) to the public subnet
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table_association
 
-resource "aws_route_table_association" "ppro_crt_to_ppro_public_subnet_1" {
-    subnet_id      = aws_subnet.ppro_public_subnet_1.id
-    route_table_id = aws_route_table.ppro_crt.id
+resource "aws_route_table_association" "ppro_crt_to_ppro_public_subnet" {
+    subnet_id      = aws_subnet.ppro_public_subnet.id
+    route_table_id = aws_route_table.ppro_crt_internet.id
 }
 
 # Create a security group for the Web Server (EC2) to allow https (443) traffic. In this example, the source will be any,
