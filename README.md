@@ -87,6 +87,8 @@ If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID<
 <!-- USAGE EXAMPLES -->
 ## Usage
 
+Follow these steps in order to implement the code.
+
 1. In your device, create the folder structure where you will clone this repository to
 2. Clone the repo. You can use for example <strong>Git Bash</strong> to do this.
    ```sh
@@ -114,6 +116,9 @@ If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID<
 7. Run the command `terraform apply` to create all the AWS resources, including the EC2 instance
 
 ### Verification
+
+Login to your AWS account and verify that:
+1. 
 
 ### Testing
 
