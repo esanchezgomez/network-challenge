@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/esanchezgomez/network-challenge">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/readme_logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">PPRO DevOps + Network Engineering Challenge</h3>
