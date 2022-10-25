@@ -37,6 +37,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+      <ul>
+        <li><a href="#prerequisites">Testing</a></li>
+      </ul>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -107,6 +110,7 @@ If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID<
 6. Run the command `terraform plan` to see what Terraform will do before actually making any changes
 7. Run the command `terraform apply` to create all the AWS resources, including the EC2 instance
 
+### Testing
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
