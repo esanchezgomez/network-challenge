@@ -99,6 +99,7 @@ If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID<
    $ set AWS_ACCESS_KEY_ID=(your access key id)
    $ set AWS_SECRET_ACCESS_KEY=(your secret access key)
    ```
+   Note that these environment variables apply only to the current shell, so if you reboot your computer or open a new terminal window, you will need to export these variables again.
 5. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 6. Push to the Branch (`git push origin feature/AmazingFeature`)
 7. Open a Pull Request
