@@ -82,7 +82,7 @@ If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID<
 ## Usage
 
 1. In your device, create the folder structure where you will clone this repository to
-2. Clone the repo
+2. Clone the repo. You can use for example <strong>Git Bash</strong> to do this.
    ```sh
    git clone https://github.com/esanchezgomez/network-challenge.git
    ```
