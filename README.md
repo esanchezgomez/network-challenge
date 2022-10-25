@@ -13,6 +13,7 @@
   <p align="center">
     Repository to create an AWS Network Infrastructure (VPC, Subnet, Internet Gateway, Custom Route Table, Security Group) as well as an Ubuntu EC2 with a Hello World application using Terraform Infrastructure as Code (IaC)
     <br />
+    <br />
     <a href="https://github.com/esanchezgomez/network-challenge/blob/main/ec2.tf">EC2 Ubuntu IaC</a>
     ·
     <a href="https://github.com/esanchezgomez/network-challenge/blob/main/vpc.tf">AWS Network IaC</a>
