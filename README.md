@@ -38,7 +38,10 @@
     </li>
     <li><a href="#usage">Usage</a></li>
       <ul>
-        <li><a href="#prerequisites">Testing</a></li>
+        <li><a href="#verification">Verification</a></li>
+      </ul>
+      <ul>
+        <li><a href="#testing">Testing</a></li>
       </ul>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -109,6 +112,8 @@ If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID<
 5. Run the command `terraform init` to initialize Terraform and figure out which providers the code is using
 6. Run the command `terraform plan` to see what Terraform will do before actually making any changes
 7. Run the command `terraform apply` to create all the AWS resources, including the EC2 instance
+
+### Verification
 
 ### Testing
 
