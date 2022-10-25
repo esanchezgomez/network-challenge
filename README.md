@@ -131,6 +131,16 @@ Login to your AWS account and verify that the following resources have been crea
 
 ### Testing
 
+In order to test the small <strong>Hello World</strong> application running in the EC2 instance, do the following:
+
+1. From your AWS console, select the <strong>PPRO-web-server</strong> and under "Details" you will see its public IP address
+2. Copy that IP address and paste it in your web browser. Make sure that it is "http://" and not "https://" and add the port number 80. Example:
+   ```sh
+   http://<publicIP>:80
+   ```
+
+You should see the message <strong>Hello PPRO World! Nice to meet you!</strong>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
