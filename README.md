@@ -102,7 +102,8 @@ If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID<
    Note that these environment variables apply only to the current shell, so if you reboot your computer or open a new terminal window, you will need to export these variables again.
    <br />
    <br />
-4. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Within that same terminal window, go into the folder where the repo is located
+5. Run the command `terraform init`
 6. Push to the Branch (`git push origin feature/AmazingFeature`)
 7. Open a Pull Request
 
