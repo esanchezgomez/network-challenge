@@ -1,6 +1,4 @@
 # network-challenge
-DevOps + Network Engineering challenge for PPRO
-
 
 
 <!-- PROJECT LOGO -->
@@ -13,16 +11,13 @@ DevOps + Network Engineering challenge for PPRO
 <h3 align="center">PPRO DevOps + Network Engineering Challenge</h3>
 
   <p align="center">
-    Repository to create an AWS Network Infrastructure (VPC, Subnet, Internet Gateway, Custom Route Table, Security Group) as well as an Ubuntu EC2 with a Hello World application
+    Repository to create an AWS Network Infrastructure (VPC, Subnet, Internet Gateway, Custom Route Table, Security Group) as well as an Ubuntu EC2 with a Hello World application using Terraform Infrastructure as Code (IaC)
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/esanchezgomez/network-challenge/blob/main/ec2.tf">EC2 Ubuntu IaC</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/esanchezgomez/network-challenge/blob/main/vpc.tf">AWS Network IaC</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/esanchezgomez/network-challenge/blob/main/key-pair-main.tf">Private/Public Keys IaC</a>
   </p>
 </div>
 
