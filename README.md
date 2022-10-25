@@ -88,6 +88,7 @@ If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID<
    ```
 3. For Terraform to be able to make changes in your AWS account, you will need to set the AWS credentials (as mentioned in the prerequisites) as the environment variables. 
    <br />
+   <br />
    Here is how to do it in a Linux or MacOS terminal:
    ```sh
    $ export AWS_ACCESS_KEY_ID=(your access key id)
