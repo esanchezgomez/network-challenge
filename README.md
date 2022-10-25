@@ -55,7 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This GitHub Repository contains all the necessary Terraform code to create the following AWS resources:
+This GitHub Repository contains all the necessary Terraform code to create the following AWS resources in the eu-west-3 region:
 * A VPC
 * A public subnet within that VPC
 * An internet gateway
