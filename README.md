@@ -43,6 +43,9 @@
       <ul>
         <li><a href="#testing">Testing</a></li>
       </ul>
+      <ul>
+        <li><a href="#destroy-the-infrastructure">Destroy the Infrastructure</a></li>
+      </ul>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -138,6 +141,10 @@ In order to test the small <strong>Hello World</strong> application running in t
    ```
 
 You should see the message <strong>Hello PPRO World! Nice to meet you!</strong>
+
+### Destroy the Infrastructure
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
