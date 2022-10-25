@@ -73,8 +73,8 @@ Before you start, read this README file carefully. Below you will see the prereq
 ### Prerequisites
 
 For this project you will need:
-* A GitHub account to be able to clone this repository
-* Have Terraform installed. Instructions how to install Terraform on Windows, Mac and Linux devices can be found <a href="https://learn.hashicorp.com/tutorials/terraform/install-cli">here</a>
+* A <strong>GitHub account</strong> to be able to clone this repository
+* Have <strong>Terraform installed</strong>. Instructions how to install Terraform on Windows, Mac and Linux devices can be found <a href="https://learn.hashicorp.com/tutorials/terraform/install-cli">here</a>
   ```sh
   npm install npm@latest -g
   ```
