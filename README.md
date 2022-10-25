@@ -117,8 +117,17 @@ Follow these steps in order to implement the code.
 
 ### Verification
 
-Login to your AWS account and verify that:
-1. 
+Login to your AWS account and verify that the following resources have been created:
+
+1. <strong>PPRO-VPC</strong> with a network of <strong>10.10.10.0/24</strong>
+2. <strong>PPRO-Public-Subnet</strong> with a subnet value of <strong>10.10.10.0/26</strong>
+3. <strong>PPRO-CRT-Internet</strong> with a default route <strong>0.0.0.0/0</strong>
+4. <strong>PPRO-Internet-Gateway</strong> attached to the VPC
+5. <strong>SG-Allow-TLS-RDP</strong> with 3 <strong>inbound rules</strong>
+    * Allow HTTPS (tcp 443) from any
+    * Allow HTTP (tcp 80) from any
+    * Allow RDP (tcp 3389) from any
+6. <strong>PPRO-web-server</strong> with a public IP address
 
 ### Testing
 
