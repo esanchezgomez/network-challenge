@@ -75,9 +75,10 @@ Before you start, read this README file carefully. Below you will see the prereq
 For this project you will need:
 * A <strong>GitHub account</strong> to be able to clone this repository
 * Have <strong>Terraform installed</strong>. Instructions how to install Terraform on Windows, Mac and Linux devices can be found <a href="https://learn.hashicorp.com/tutorials/terraform/install-cli">here</a>
-  ```sh
-  npm install npm@latest -g
-  ```
+* An <strong>AWS account</strong> with AWS Access Credentials. 
+
+If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID</strong> and <strong>Secret Access Key</strong> by navigating to your IAM security credentials in the AWS console. Click "Create access key" here and download the file. This file contains your access credentials.
+
 
 ### Installation
 
