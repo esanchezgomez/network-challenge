@@ -51,8 +51,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 This GitHub Repository contains all the necessary Terraform code to create the following AWS resources:
 * A VPC
 * A public subnet within that VPC
@@ -70,13 +68,13 @@ This GitHub Repository contains all the necessary Terraform code to create the f
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Before you start, read this README file carefully. Below you will see the prerequisites as well as installation instructions to make this project work.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+For this project you will need:
+* A GitHub account to be able to clone this repository
+* Have Terraform installed. Instructions how to install Terraform on Windows, Mac and Linux devices can be found <a href="https://learn.hashicorp.com/tutorials/terraform/install-cli">here</a>
   ```sh
   npm install npm@latest -g
   ```
