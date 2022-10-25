@@ -65,6 +65,8 @@ This GitHub Repository contains all the necessary Terraform code to create the f
 * A key pair (public and private) for access into an EC2 instance
 * An EC2 instance (ubuntu) with a public IP running a simple Hello World application
 
+<p align="center"><img src="images/aws_network.png" alt="AWS" width="80" height="80"></p>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
