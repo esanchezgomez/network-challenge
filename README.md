@@ -144,7 +144,9 @@ You should see the message <strong>Hello PPRO World! Nice to meet you!</strong>
 
 ### Destroy the Infrastructure
 
+As a recommended last step, once you are done with testing, you should destroy all of the AWS resources you just created. Unless of course, this is for a production environment.
 
+In order to do this, simple run the command `terraform destroy`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
