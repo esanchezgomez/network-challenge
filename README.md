@@ -1,4 +1,4 @@
-# PPRO DevOps + Network Engineering Challenge README File
+# README File
 
 
 <!-- PROJECT LOGO -->
@@ -23,16 +23,12 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -57,22 +53,15 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+This GitHub Repository contains all the necessary Terraform code to create the following AWS resources:
+* A VPC
+* A public subnet within that VPC
+* An internet gateway
+* A Custom Route Table (CRT) with a default route for internet access
+* Association between the public subnet and the CRT
+* A Security Group to allow TLS (443) and HTTP (80) access to an EC2 instance
+* A key pair (public and private) for access into an EC2 instance
+* An EC2 instance (ubuntu) with a public IP running a simple Hello World application
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
