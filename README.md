@@ -91,6 +91,11 @@ If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID<
    $ export AWS_ACCESS_KEY_ID=(your access key id)
    $ export AWS_SECRET_ACCESS_KEY=(your secret access key)
    ```
+   Here is how to do it in a Windows PowerShell terminal:
+   ```sh
+   $ set AWS_ACCESS_KEY_ID=(your access key id)
+   $ set AWS_SECRET_ACCESS_KEY=(your secret access key)
+   ```
 5. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 6. Push to the Branch (`git push origin feature/AmazingFeature`)
 7. Open a Pull Request
