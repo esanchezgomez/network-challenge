@@ -103,9 +103,9 @@ If you don't have AWS Access Credentials, create your <strong>AWS Access Key ID<
    <br />
    <br />
 4. Within that same terminal window, go into the folder where the repo is located
-5. Run the command `terraform init`
-6. Push to the Branch (`git push origin feature/AmazingFeature`)
-7. Open a Pull Request
+5. Run the command `terraform init` to initialize Terraform and figure out which providers the code is using
+6. Run the command `terraform plan` to see what Terraform will do before actually making any changes
+7. Run the command `terraform apply` to create all the AWS resources, including the EC2 instance
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
