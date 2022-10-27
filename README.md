@@ -106,6 +106,11 @@ Follow these steps in order to implement the code.
    ```
    Here is how to do it in a Windows PowerShell terminal:
    ```sh
+   $ $Env:AWS_ACCESS_KEY_ID="(your access key id)"
+   $ $Env:AWS_SECRET_ACCESS_KEY="(your secret access key)"
+   ```
+   Here is how to do it in a Windows Command Prompt terminal:
+   ```sh
    $ set AWS_ACCESS_KEY_ID=(your access key id)
    $ set AWS_SECRET_ACCESS_KEY=(your secret access key)
    ```
